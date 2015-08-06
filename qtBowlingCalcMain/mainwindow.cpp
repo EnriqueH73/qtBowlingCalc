@@ -1,6 +1,47 @@
+/**
+ *  @file mainwindow.cpp
+ *  @brief Main window that will be holding the custom widgets.
+ *  @details
+ *
+ *This are templates for GraphWiz and Message Sequence Chart Renderer
+ @dot
+	digraph G {
+	main -> parse -> execute;
+	main -> init;
+	main -> cleanup;
+	execute -> make_string;
+	execute -> printf
+	init -> make_string;
+	main -> printf;
+	execute -> compare;
+	}
+@enddot
+ *
+@msc
+	arcgradient = 8;
+	a [label="Client"],b [label="Server"];
+	a-xb [label="get accel"];
+	a=>b [label="get accel"];
+	a<=b [label="ack"];
+	a<=b [label="accel data"];
+@endmsc
+ *
+ */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+**
+ * @publicsection
+ * @author EHerrera
+ * @date 7/30/15                                                      **//**
+ * @addtogroup MainWindow
+ * @brief Starting all necessary Threads and Timers
+ * @param[in] QWidget*
+ * @param[out] none
+ * @return New Instance of MainWindow
+ *
+ * @details
+ */
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
