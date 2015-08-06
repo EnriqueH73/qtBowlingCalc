@@ -18,3 +18,11 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+win32: LIBS += -L$$PWD/../../build-qtBowlingClacProjects-Desktop_Qt_5_5_0_MSVC2013-Release/qtBowlingWidgets/release/ -lbowlingwidgetsplugin
+
+INCLUDEPATH += $$PWD/../qtBowlingWidgets
+INCLUDEPATH += $$PWD/../../build-qtBowlingClacProjects-Desktop_Qt_5_5_0_MSVC2013-Release/qtBowlingWidgets
+DEPENDPATH  += $$PWD/../qtBowlingWidgets
+
+
