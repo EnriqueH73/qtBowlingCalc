@@ -61,7 +61,19 @@ bool bowlPinMapPlugin::isContainer() const
 
 QString bowlPinMapPlugin::domXml() const
 {
-    return QLatin1String("<widget class=\"bowlPinMap\" name=\"bowlPinMap\">\n</widget>\n");
+    return QLatin1String("<widget class=\"bowlPinMap\" name=\"bowlPinMap\">\n"
+                         " <property name=\"geometry\">\n"
+                         "   <rect>\n"
+                         "    <x>0</x>\n"
+                         "    <y>0</y>\n"
+                         "    <width>291</width>\n"
+                         "    <height>281</height>\n"
+                         "   </rect>\n"
+                         " </property>\n"
+                         " <property name=\"TurnNumber\" >\n"
+                         "   <int>1</int>\n"
+                         " </property>\n"
+                         "</widget>\n");
 }
 
 QString bowlPinMapPlugin::includeFile() const

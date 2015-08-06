@@ -1,2 +1,5 @@
-HEADERS += bowlpinmap.h
-SOURCES += bowlpinmap.cpp
+HEADERS += bowlpinmap.h
+SOURCES += bowlpinmap.cpp
+
+FORMS += \
+    $$PWD/form_pinmap.ui
