@@ -1,4 +1,4 @@
-CONFIG      += plugin debug_and_release release
+CONFIG      += plugin debug_and_release
 TARGET      = $$qtLibraryTarget(bowlingwidgetsplugin)
 TEMPLATE    = lib
 
