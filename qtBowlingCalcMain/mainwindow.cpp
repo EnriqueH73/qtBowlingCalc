@@ -27,18 +27,19 @@
 @endmsc
  *
  */
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-**
+/**
  * @publicsection
  * @author EHerrera
  * @date 7/30/15                                                      **//**
  * @addtogroup MainWindow
- * @brief Starting all necessary Threads and Timers
+ * @brief  Constructor: Set up all the necessary message signals between widgets.
  * @param[in] QWidget*
  * @param[out] none
- * @return New Instance of MainWindow
+ * @return Obj (New Instance of MainWindow)
  *
  * @details
  */
@@ -71,6 +72,18 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->bowlFrame_10,SIGNAL(mouseClick_OurFrameObj(bowlFrame*)),ui->bowlPinMap_ball2,SLOT(setCurrentFrame(bowlFrame*)));
 }
 
+/**
+ * @publicsection
+ * @author EHerrera
+ * @date 7/30/15                                                      **//**
+ * @addtogroup MainWindow
+ * @brief  Destructor: free up any allocated memory.
+ * @param[in] none
+ * @param[out] none
+ * @return none
+ *
+ * @details
+ */
 MainWindow::~MainWindow()
 {
     delete ui;

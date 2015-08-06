@@ -49,7 +49,7 @@ signals:
     void Mouse_Entered( void );
     void mouseClick_OurFrameNum(int);
     void mouseClick_OurFrameObj(bowlFrame*);
-    //void mouseClick_OurFrameObj(bowlFrame*, int);
+
 
 
 };
