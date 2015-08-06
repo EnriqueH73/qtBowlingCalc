@@ -66,9 +66,12 @@ QString bowlFramePlugin::domXml() const
                          "   <rect>\n"
                          "    <x>0</x>\n"
                          "    <y>0</y>\n"
-                         "    <width>152</width>\n"
-                         "    <height>121</height>\n"
+                         "    <width>171</width>\n"
+                         "    <height>122</height>\n"
                          "   </rect>\n"
+                         "  </property>\n"
+                         "  <property name=\"OurFrameNumber\" >\n"
+                         "   <int>1/int>\n"
                          "  </property>\n"
                          "</widget>\n");
 }
